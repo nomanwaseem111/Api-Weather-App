@@ -1,7 +1,7 @@
 let getWeather = () => {
 
     let updateCity = document.querySelector("#city").value;
-    axios.get(`http://api.weatherapi.com/v1/current.json?key=282ce2cf9184464aa6d212909222208&q=${updateCity}`)
+    axios.get(`https://api.weatherapi.com/v1/current.json?key=282ce2cf9184464aa6d212909222208&q=${updateCity}`)
         .then((response) => {
 
             const data = response.data;
